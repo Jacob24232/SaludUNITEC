@@ -1,0 +1,272 @@
+<html>
+    <head>
+        <title>  SALUD UNITEC  </title>
+        <link rel="stylesheet" href="ESTILO.CSS">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <enlace rel="preconectar" href="https://fonts.googleapis.com">
+            <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+            <enlace href="https: //fonts.googleapis.com/css2? familia= Abierto+Sans:peso@300;400;700 & display=swap" rel="stylesheet">
+    </head> 
+     
+    <body>
+        <header class="header" id="inicio">
+            <img src="img/bx-menu-alt-right (1).svg" alt="" class="hamburger" >
+            <nav class="menu-navegacion">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#servicio">Servicio</a>
+                    <a href="#Consejos">Consejos</a>
+                    <a href="#Calculadoras">Calculadoras</a>
+                    <a href="#Dietas">Dietas y rutinas</a>
+                    <a href="#footer">Contacto</a>
+                    <a href="index.html">Cerrar sesion</a>
+            </nav>
+            <div class="contenedor head">
+                <h1 class="titulo">Salud UNITEC</h1>
+                <p class="copy">Te ayudamos a conseguir tu cuerpo soñado</p>
+            </div>
+            
+        </header>
+        <main>
+            <section class="services contenedor" id="servicio">
+                <h2 class="subtitulo">Nuestro servicio</h2>
+                <div class="contenedor-servicio">
+                    <img src="img/Fitness_Monochromatic (1).svg" alt="">
+                    <div class="checklist-servicio">
+                        <div class="service">
+                            <h3 class="n-service"><span class="number">1</span>¿Por que es importante hacer actividad fisica?</h3>
+                            <p> La actividad física reduce el riesgo de padecer: Enfermedades cardiovasculares, tensión arterial alta, cáncer de colon y diabetes. Ayuda a controlar el sobrepeso, la obesidad y el porcentaje de grasa corporal. Fortalece los huesos, aumentando la densidad ósea.</p>
+                        </div>
+                        <div class="service">
+                            <h3 class="n-service"><span class="number">2</span>¿Por que es importante una buena alimentacion?</h3>
+                            <p> Una alimentación saludable ayuda a mantener una buena salud y a prevenir enfermedades no transmisibles como la diabetes, las cardiopatías, los accidentes cerebrovasculares y el cáncer.</p>
+                        </div>
+                        <div class="service">
+                            <h3 class="n-service"><span class="number">3</span>¿Cual es nuestro objetivo?</h3>
+                            <p> Ayudarte a conseguir una vida saludable en base a tus necesidades, te ayudaremos calculando la cantidad necesaria de calorias en tu dia,tambien te ayudaremos a saber cual es tu peso y altura ideal, al igual que te ayudaremos a conseguir un fisico maravilloso sin necesidad de equipo gimnasio</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery" id="Consejos">
+                <div class="contenedor">
+                    <h2 class="subtitulo">Consejos para tener una vida mas saludable (Click en cada imagen)</h2>
+                    <div class="contenedor-galeria">
+                        <img src="img/1.jpeg" class="img-galeria" alt="Hola">
+                        <img src="img/2.jpeg" class="img-galeria" alt="">
+                        <img src="img/3.jpeg" class="img-galeria" alt="">
+                        <img src="img/4.jpeg" class="img-galeria" alt="">
+                        <img src="img/5.jpeg" class="img-galeria" alt="">
+                        <img src="img/6.jpeg" class="img-galeria" alt="">
+                    </div>
+                </div>
+            </section>
+            <div class="imagen-light">
+                <img src="img/bxs-x-circle (1).svg" alt="" class="close">
+                <img src="" alt="" class="agregar-imagen">
+            </div>
+            
+            <section class="contenedor" id="Calculadoras">
+                <h2 class="subtitulo">Expertos en:</h2>
+                <section class="experts">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Calculadora de Peso Ideal con Edad</title>
+                        <style>
+                            .cont-expert {
+                                text-align: center;
+                                margin: 20px;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                    
+                        <div class="cont-expert">
+                            
+                            <img src="img/peso ideal.avif" alt="">
+                            <h3 class="n-expert">Calcula tu peso ideal.</h3>
+                            
+                            <label for="altura">Altura (cm): </label>
+                            <input type="number" id="altura" placeholder="Altura en centímetros">
+                    
+                            <br>
+                    
+                            <label for="sexo">Sexo: </label>
+                            <select id="sexo">
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="indefinido">Indefinido</option>
+                            </select>
+                    
+                            <br>
+                            
+                            <label for="edad">Edad: </label>
+                            <input type="number" id="edad" placeholder="Edad">
+                    
+                            <br>
+                            
+                            <button onclick="calcularPesoIdeal()">Calcular Peso Ideal</button>
+                            <p id="resultadoPesoIdeal"></p>
+                            <div id="pesos" style="display:none;">
+                                <p>¡Si crees que tu peso no es el adecuado y quieres subir o bajar, te recomendamos visitar las sigs. paginas web!</p>
+                            </div>
+                            
+                            <a id="irAPeso" href="rutinabajar.html" style="display:none;">Bajar de peso</a>
+                            <a id="irAPes" href="rutinamasa.html" style="display:none;">Subir masa muscular</a>
+                            <a id="irAPe" href="rutinaforma.html" style="display:none;">Mantenerte en forma</a>
+                            <script src="js/CalcPesoIdeal.js"></script>     
+                        </div>
+                                        <head>
+                                            <meta charset="UTF-8">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                            <title>Calculadora de Altura</title>
+                                            <style>
+                                                .cont-expert {
+                                                    text-align: center;
+                                                    margin: 20px;
+                                                }
+                                            </style>
+                                        </head>
+                                        <body>
+                                        
+                                            <div class="cont-expert">
+                                                <img src="img/altura.webp" alt="">
+                                                <h3 class="n-expert">Calcula tu altura estimada.</h3>
+                                        
+                                                <label for="alturaPadre">Altura del Padre (cm): </label>
+                                                <input type="number" id="alturaPadre" placeholder="Altura del Padre">
+                                        
+                                                <br>
+                                        
+                                                <label for="alturaMadre">Altura de la Madre (cm): </label>
+                                                <input type="number" id="alturaMadre" placeholder="Altura de la Madre">
+                                        
+                                                <br>
+                                        
+                                                <label for="sexo">Sexo: </label>
+                                                <select id="sexo">
+                                                    <option value="masculino">Masculino</option>
+                                                    <option value="femenino">Femenino</option>
+                                                    <option value="indefinido">Indefinido</option>
+                                                </select>
+                                        
+                                                <br>
+                                        
+                                                <button onclick="calcularAlturaEstimada()">Calcular Altura Estimada</button>
+                                                <p id="resultadoAlturaEstimada"></p>
+                    
+                    <div id="mensaje" style="display:none;">
+                        <p>¡Si tienes dudas sobre tu altura te recomendamos visitar esta pagina web!</p>
+                    </div>
+                    
+                    <a id="irAMensaje" href="BuenaAltura.html" style="display:none;">Ir a la pagina</a>
+                    
+                                            </div>
+                                                <script src="js/CalcAlturaIdeal.js"></script> 
+                    
+                                           
+                                            <head>
+                                                <meta charset="UTF-8">
+                                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                                <title>Calculadora de Calorías Diarias</title>
+                                                <style>
+                                                    .cont-expert {
+                                                        text-align: center;
+                                                        margin: 20px;
+                                                    }
+                                                </style>
+                                            </head>
+                                            <body>
+                                            
+                                                <div class="cont-expert">
+                                                    <img src="img/calorias.jpg" alt="">
+                                                    <h3 class="n-expert">Calcula tus calorías necesarias diarias.</h3>
+                                            
+                                                    <label for="peso">Peso (kg): </label>
+                                                    <input type="number" id="peso" placeholder="Peso en kilogramos">
+                                            
+                                                    <br>
+                                            
+                                                    <label for="sexo">Sexo: </label>
+                                                    <select id="sexo">
+                                                        <option value="masculino">Masculino</option>
+                                                        <option value="femenino">Femenino</option>
+                                                        <option value="indefinido">Indefinido</option>
+                                                    </select>
+                                            
+                                                    <br>
+                                            
+                                                    <button onclick="calcularCaloriasDiarias()">Calcular Calorías Diarias</button>
+                                                    <p id="resultadoCalorias"></p>
+                                                    <div id="calorias" style="display:none;">
+                                                        <p>¡Si crees que tus calorias son bajas, te recomendamos visitar las sigs. paginas web para una buena alimentacion!</p>
+                                                    </div>
+                                                    
+                                                    <a id="irACalorias" href="dietabajar.html" style="display:none;">Bajar de peso</a>
+                                                    <a id="irACaloria" href="dietamasa.html" style="display:none;">Ganar masa muscular</a>
+                                                    <a id="irACalori" href="dietaforma.html" style="display:none;">Mantenerse en forma</a>
+                                                    <script src="js/CalcCalorias.js"></script> 
+                                                </div>
+                                            </div>
+                    <section class="contenedor" id="Videos">
+                        <h2 class="subtitulo">Recomendaciones para tener una vida mas saludable</h2>
+                        <h2 class="sub">-Rutinas de ejercicio para bajar de peso:</h2>
+
+                        <P><a href="rutinabajar.html">Click aqui para conocer tus rutinas</a></P>
+                        <h2 class="sub">-Rutinas de ejercicio para ganar masa muscular:</h2>
+
+                        <P><a href="rutinamasa.html">Click aqui para conocer tus rutinas</a></P>
+                        
+                        <h2 class="sub">-Rutinas de ejercicio para mantenerte en forma:</h2>
+                        <P><a href="rutinaforma.html">Click aqui para conocer tus rutinas</a></P>
+
+                        <h2 class="sub">-Dietas para bajar de peso:</h2>
+                        <P><a href="dietabajar.html">Click aqui para conocer las dietas</a></P>
+
+                        <h2 class="sub">-Dietas para ganar masa muscular:</h2>
+                        <P><a href="dietamasa.html">Click aqui para conocer las dietas</a></P>
+
+                        <h2 class="sub">-Dietas para mantenerte en forma:</h2>
+                        <P><a href="dietaforma.html">Click aqui para conocer las dietas</a></P>
+                        
+
+                    
+                    
+                </section>
+            </section>
+        </main>
+    
+        <footer id="footer">
+            <div class="contenedor footer-content">
+                    <div class="contact-us">
+                        <h2 class="brand">Salud UNITEC</h2>
+                        <p>Somos expertos en el cuidado de tu Salud</p>
+                    </div>
+                    <div class="social-media">
+                        <div "./" class="social-media-icon">
+                        
+                        <a href='https://www.facebook.com/unitec/?mibextid=LQQJ4'>
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                    </div>
+                    <div "./" class="social-media-icon">
+                        <a href='https://twitter.com/unitecmx?s=21&t=PuSbH4eKtUGcMzxvLJbQ-w'>
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+                    </div>
+                    <div "./" class="social-media-icon">
+                        <a href='https://instagram.com/unitecmx?igshid=YmMyMTA2M2Y='>
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </div>
+                    </div>
+                
+            </div>
+            <div class="line"></div>
+        </footer>
+        <script src="js/menu.js"></script>
+        <script src="js/lightbox.js"></script>
+        <script src="ESTILO.CSS"></script>
+    </body>
+    </html>
+
